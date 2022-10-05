@@ -1,0 +1,16 @@
+/////////////////////////////////////////////////////////////////// COLORS VARIABLES
+$color-green-vivid: rgba(106, 191, 23, 1);
+$color-green-darker: rgba(90, 165, 17, 1);
+$color-blue: rgba(23, 117, 191, 1);
+$color-gray-light: rgba(248, 251, 252, 1);
+$color-gray-regular: rgba(171, 171, 171, 1);
+$color-black: black;
+$color-white: white;
+/////////////////////////////////////////////////////////////////// COLORS VARIABLES -------- /
+
+/////////////////////////////////////////////////////////////////// MIXINS
+@mixin title-1 {
+    font-size: 10rem;
+    color: $color-green-vivid;
+}
+/////////////////////////////////////////////////////////////////// MIXINS -------- /
