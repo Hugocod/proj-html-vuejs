@@ -1,14 +1,14 @@
 <template>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <cta-section />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import CtaSection from "./components/primary/CtaSection.vue";
 
 export default {
     name: "App",
     components: {
-        HelloWorld,
+        CtaSection,
     },
 };
 </script>
