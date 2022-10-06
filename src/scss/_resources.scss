@@ -6,22 +6,56 @@
 $color-green-vivid: rgba(106, 191, 23, 1);
 $color-green-darker: rgba(90, 165, 17, 1);
 $color-blue: rgba(23, 117, 191, 1);
-$color-gray-light: rgba(248, 251, 252, 1);
+$color-blue-light: rgb(37, 153, 242);
+$color-gray-light: rgba(242, 245, 248);
 $color-gray-regular: rgba(171, 171, 171, 1);
+$color-gray-darker: rgba(88, 88, 88);
 $color-black: black;
 $color-white: white;
 /////////////////////////////////////////////////////////////////// COLORS VARIABLES -------- /
 
 /////////////////////////////////////////////////////////////////// MIXINS
-@mixin title-1 {
-    font-size: 1rem;
-    color: $color-green-vivid;
+
+@mixin title-big {
+    font-size: 4rem;
+    color: $color-black;
+    text-transform: uppercase;
+    font-weight: 900;
 }
+
+@mixin title-medium {
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: $color-green-vivid;
+    text-align: center;
+}
+
+@mixin title-regular {
+    font-size: 2rem;
+    font-weight: 900;
+    color: $color-blue;
+    text-align: center;
+}
+
+@mixin title-small {
+    font-size: 1rem;
+    color: $color-gray-darker;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/////////////////////////////////////////////////////////////////// MIXINS -------- /
+
 @mixin btn-primary {
     background-color: $color-blue;
     color: $color-white;
-    padding: 0.4rem 1.6rem;
+    padding: 0.8rem 1.8rem;
     border-radius: 3rem;
     text-transform: uppercase;
+    font-weight: 900;
+
+    &:hover {
+        background-color: $color-blue-light;
+        cursor: pointer;
+    }
 }
-/////////////////////////////////////////////////////////////////// MIXINS -------- /
