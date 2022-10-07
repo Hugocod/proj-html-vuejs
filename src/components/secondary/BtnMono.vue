@@ -1,10 +1,11 @@
 <template>
-    <button>ciao</button>
+    <button>{{ buttonText }}</button>
 </template>
 
 <script>
 export default {
     name: "BtnMono",
+    props: { buttonText: String },
 };
 </script>
 

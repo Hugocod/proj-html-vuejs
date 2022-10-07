@@ -16,8 +16,13 @@ $color-white: white;
 
 /////////////////////////////////////////////////////////////////// MIXINS
 
+@mixin wrapper-size {
+    width: 90%;
+    margin: 0 auto;
+}
+
 @mixin title-big {
-    font-size: 4rem;
+    font-size: 5rem;
     color: $color-black;
     text-transform: uppercase;
     font-weight: 900;
@@ -38,13 +43,19 @@ $color-white: white;
 }
 
 @mixin title-small {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: $color-gray-darker;
     text-transform: uppercase;
     font-weight: 900;
+    padding: 1rem 0;
 }
 
-/////////////////////////////////////////////////////////////////// MIXINS -------- /
+@mixin title-list {
+    font-size: 1.2rem;
+    color: $color-black;
+    text-transform: uppercase;
+    font-weight: 900;
+}
 
 @mixin btn-primary {
     background-color: $color-blue;
@@ -59,3 +70,4 @@ $color-white: white;
         cursor: pointer;
     }
 }
+/////////////////////////////////////////////////////////////////// MIXINS -------- /
