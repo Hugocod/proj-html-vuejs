@@ -2,15 +2,19 @@
     <div>
         <intro-section />
         <info-section-award />
+        <info-section-moving />
+        <service-section />
     </div>
 </template>
 
 <script>
 import InfoSectionAward from "./components/primary/InfoSectionAward.vue";
+import InfoSectionMoving from "./components/primary/InfoSectionMoving.vue";
 import IntroSection from "./components/primary/IntroSection.vue";
+import ServiceSection from "./components/primary/ServiceSection.vue";
 export default {
     name: "App",
-    components: { IntroSection, InfoSectionAward },
+    components: { IntroSection, InfoSectionAward, InfoSectionMoving, ServiceSection },
 };
 </script>
 
