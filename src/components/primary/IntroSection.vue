@@ -2,7 +2,7 @@
     <div class="container">
         <header>
             <div class="wrapper">
-                <img src="../../../public/images/avada-movers-logo.png" alt="logo" />
+                <img src="../../../public/images/avada-movers-retinalogo.png" alt="logo" />
 
                 <div class="nav-container">
                     <nav>
@@ -46,6 +46,10 @@ export default {
 header {
     width: 100%;
     padding: 2rem 0;
+
+    img {
+        width: 13rem;
+    }
 
     .wrapper {
         display: flex;
