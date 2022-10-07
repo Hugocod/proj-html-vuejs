@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <social-block classVariant="1" />
         <header>
             <div class="wrapper">
                 <img src="../../../public/images/avada-movers-retinalogo.png" alt="logo" />
@@ -22,15 +23,19 @@
             <p>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</p>
         </div>
 
-        <button class="large-button">get a free quote online now</button>
+        <button class="large-button">
+            <font-awesome-icon icon="fa-regular fa-paper-plane" />
+            get a free quote online now
+        </button>
     </div>
 </template>
 
 <script>
 import BtnMono from "../secondary/BtnMono.vue";
+import SocialBlock from "../secondary/SocialBlock.vue";
 import TextBlock from "../secondary/TextBlock.vue";
 export default {
-    components: { BtnMono, TextBlock },
+    components: { BtnMono, TextBlock, SocialBlock },
     name: "IntroSection",
 };
 </script>
@@ -41,6 +46,7 @@ export default {
 .container {
     background-image: url(../../../public/images/avada-movers-homeherobackground-final.jpg);
     background-size: cover;
+    background-position: fixed;
 }
 
 header {
@@ -48,7 +54,7 @@ header {
     padding: 2rem 0;
 
     img {
-        width: 13rem;
+        width: 12rem;
     }
 
     .wrapper {
