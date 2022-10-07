@@ -1,4 +1,6 @@
-<template><div></div></template>
+<template>
+    <div></div>
+</template>
 
 <script>
 export default {
@@ -7,5 +9,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../scss/_resources.scss";
+@import "../../scss/_resources.scss";
 </style>

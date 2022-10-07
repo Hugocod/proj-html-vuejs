@@ -7,5 +7,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../scss/_resources.scss";
+@import "../../scss/_resources.scss";
 </style>
