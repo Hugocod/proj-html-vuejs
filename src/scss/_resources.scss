@@ -22,7 +22,7 @@ $color-white: white;
 }
 
 @mixin title-big {
-    font-size: 5rem;
+    font-size: 4rem;
     color: $color-black;
     text-transform: uppercase;
     font-weight: 900;
@@ -43,7 +43,7 @@ $color-white: white;
 }
 
 @mixin title-small {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: $color-gray-darker;
     text-transform: uppercase;
     font-weight: 900;

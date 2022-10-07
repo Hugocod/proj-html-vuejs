@@ -47,10 +47,6 @@ header {
     width: 100%;
     padding: 2rem 0;
 
-    img {
-        width: 15rem;
-    }
-
     .wrapper {
         display: flex;
         justify-content: space-between;
@@ -80,14 +76,14 @@ header {
         @include title-small;
     }
 
-    padding: 6rem 0rem 16rem 0rem;
+    padding: 6rem 0rem 11rem 0rem;
 }
 
 .large-button {
     width: 100%;
-    padding: 5rem 0;
+    padding: 4rem 0;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background-color: $color-blue;
     color: $color-white;
 
