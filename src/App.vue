@@ -1,25 +1,30 @@
 <template>
-    <cta-section />
+    <intro-section />
 </template>
 
 <script>
-import CtaSection from "./components/primary/CtaSection.vue";
-
+import IntroSection from "./components/primary/IntroSection.vue";
 export default {
     name: "App",
-    components: {
-        CtaSection,
-    },
+    components: { IntroSection },
 };
 </script>
 
 <style lang="scss">
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto", sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: #2c3e50;
-    margin-top: 60px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 </style>
