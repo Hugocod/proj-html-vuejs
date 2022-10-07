@@ -1,12 +1,16 @@
 <template>
-    <intro-section />
+    <div>
+        <intro-section />
+        <info-section-award />
+    </div>
 </template>
 
 <script>
+import InfoSectionAward from "./components/primary/InfoSectionAward.vue";
 import IntroSection from "./components/primary/IntroSection.vue";
 export default {
     name: "App",
-    components: { IntroSection },
+    components: { IntroSection, InfoSectionAward },
 };
 </script>
 
