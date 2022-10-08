@@ -1,14 +1,13 @@
 <template>
     <div class="container">
-        <img src="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-serviceonephoto-final.jpg" alt="" />
+        <img :src="imgUrl" alt="" />
 
         <div class="text-container">
-            <h2>Award Winning Moving Company</h2>
+            <h2>{{ title }}</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus.
+                {{ description }}
             </p>
-            <btn-mono />
+            <btn-mono buttonText="read more" />
         </div>
     </div>
 </template>
@@ -16,8 +15,17 @@
 <script>
 import BtnMono from "./BtnMono.vue";
 export default {
-    components: { BtnMono },
     name: "CardBlock",
+    /*    data() {
+        return {
+            img_1: [require("../../../public/images/avada-movers-serviceonephoto-final.jpg")],
+            img_2: [require("../../../public/images/avada-movers-serviceonephoto-final.jpg")],
+            img_3: [require("../../../public/images/avada-movers-serviceonephoto-final.jpg")],
+            images: [this.img_1, this.img_2, this.img_3],
+        };
+    }, */
+    components: { BtnMono },
+    props: ["title", "description", "imgUrl"],
 };
 </script>
 
@@ -28,13 +36,13 @@ export default {
 .container {
     background-color: $color-gray-light;
 
-    padding: 1.5rem;
+    padding: 1.1rem;
     h2 {
         @include title-regular;
     }
 
     p {
-        margin: 1.3rem 0;
+        margin: 1.1rem 0;
     }
 
     img {
