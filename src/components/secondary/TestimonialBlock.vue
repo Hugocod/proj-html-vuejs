@@ -1,12 +1,11 @@
 <template>
     <div class="container">
-        <img src="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-johndoe-final.jpg" alt="" />
+        <img :src="imgUrl" alt="" />
 
         <div class="text-container">
-            <h2>John Doe</h2>
+            <h2>{{ title }}</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus.
+                {{ description }}
             </p>
         </div>
     </div>
@@ -15,6 +14,7 @@
 <script>
 export default {
     name: "TestimonialBlock",
+    props: ["title", "description", "imgUrl"],
 };
 </script>
 

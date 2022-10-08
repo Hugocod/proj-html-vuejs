@@ -2,8 +2,9 @@
     <div>
         <intro-section />
         <info-section-award />
-        <info-section-moving />
         <service-section />
+        <testimonials-section />
+        <info-section-moving />
     </div>
 </template>
 
@@ -12,9 +13,10 @@ import InfoSectionAward from "./components/primary/InfoSectionAward.vue";
 import InfoSectionMoving from "./components/primary/InfoSectionMoving.vue";
 import IntroSection from "./components/primary/IntroSection.vue";
 import ServiceSection from "./components/primary/ServiceSection.vue";
+import TestimonialsSection from "./components/primary/TestimonialsSection.vue";
 export default {
     name: "App",
-    components: { IntroSection, InfoSectionAward, InfoSectionMoving, ServiceSection },
+    components: { IntroSection, InfoSectionAward, InfoSectionMoving, ServiceSection, TestimonialsSection },
 };
 </script>
 
