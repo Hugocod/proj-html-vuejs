@@ -3,7 +3,7 @@
         <h3>title</h3>
         <ul>
             <li v-for="n in 5" :key="n">
-                <a>link{{ n }}</a>
+                <a><font-awesome-icon icon="fa-solid fa-chevron-right" /> link{{ n }}</a>
             </li>
         </ul>
     </div>

@@ -23,8 +23,6 @@ export default {
 
 /////////////////////////////////////////////////////////////////// MIXINS
 .container {
-    background-color: $color-gray-light;
-
     padding: 1.5rem;
     h2 {
         @include title-regular;
