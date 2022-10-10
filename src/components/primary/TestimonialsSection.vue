@@ -9,12 +9,12 @@
                     description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'"
                 />
                 <testimonial-block
-                    imgUrl="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-johndoe-final.jpg"
+                    imgUrl="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-janedoe-final.jpg"
                     title="Jane Doe"
                     description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'"
                 />
                 <testimonial-block
-                    imgUrl="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-johndoe-final.jpg"
+                    imgUrl="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-johnsmith-final.jpg"
                     title="John Smith"
                     description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'"
                 />

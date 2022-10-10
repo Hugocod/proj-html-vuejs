@@ -9,12 +9,12 @@
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                 />
                 <card-block
-                    imgUrl="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-serviceonephoto-final.jpg"
+                    imgUrl="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-servicetwophoto-final.jpg"
                     title="We Do All The Lifting"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                 />
                 <card-block
-                    imgUrl="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-serviceonephoto-final.jpg"
+                    imgUrl="https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-servicethreephoto-final.jpg"
                     title="Coast To Coast"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
                 />
@@ -36,6 +36,7 @@ export default {
 @import "../../scss/_resources.scss";
 
 .container {
+    text-align: center;
     .wrapper {
         @include wrapper-size;
         padding: 6rem 0rem;
