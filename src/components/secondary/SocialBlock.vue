@@ -1,7 +1,7 @@
 <template>
     <div :class="availableVariants[setClass()]">
         <div class="wrapper">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quia odit vel sed.</p>
+            <p>{{ description }}</p>
 
             <div class="social-container">
                 <font-awesome-icon icon="fa-brands fa-facebook" />
@@ -22,7 +22,7 @@ export default {
         };
     },
 
-    props: { classVariant: Number, title: String, subtitle: String },
+    props: { classVariant: Number, description: String },
     methods: {
         setClass() {
             return this.classVariant - 1; // fa partire il conto da 1
@@ -59,7 +59,8 @@ export default {
         }
 
         p {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+            font-weight: 500;
         }
     }
 }
@@ -81,6 +82,7 @@ export default {
         .social-container {
             display: flex;
             flex-wrap: nowrap;
+            padding-top: 2rem;
             .fa-facebook,
             .fa-twitter,
             .fa-instagram,
@@ -91,8 +93,9 @@ export default {
         }
 
         p {
-            font-size: 0.8rem;
-            padding-bottom: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
         }
     }
 }
