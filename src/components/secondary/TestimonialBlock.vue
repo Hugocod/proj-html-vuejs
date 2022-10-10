@@ -37,6 +37,10 @@ export default {
         width: 50%;
         margin-bottom: 1.3rem;
         border-radius: 50%;
+
+        @media screen and (max-width: 1024px) {
+            width: 200px;
+        }
     }
 
     .text-container {
