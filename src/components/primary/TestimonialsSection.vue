@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-testimonial">
         <div class="wrapper">
             <text-block :classVariant="1" subtitle="happy customers" title="Testimonials" />
             <div class="card-container">
@@ -38,7 +38,10 @@ export default {
 <style scoped lang="scss">
 @import "../../scss/_resources.scss";
 
-.container {
+.container-testimonial {
+    background-image: url(../../../public/images/avada-movers-testimonial-background.jpg);
+    background-size: cover;
+    text-align: center;
     .wrapper {
         @include wrapper-size;
         padding: 6rem 0rem;
