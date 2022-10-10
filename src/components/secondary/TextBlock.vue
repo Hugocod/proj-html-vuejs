@@ -10,7 +10,7 @@ export default {
     name: "TextBlock",
     data() {
         return {
-            availableVariants: ["variant-1", "variant-2", "variant-3"], // a ognuna delle classi corrisponde una variante del componente
+            availableVariants: ["variant-1", "variant-2", "variant-3", "variant-4"], // a ognuna delle classi corrisponde una variante del componente
         };
     },
     props: { classVariant: Number, title: String, subtitle: String },
@@ -38,7 +38,6 @@ export default {
 
     h2 {
         @include title-medium;
-        width: 50%;
     }
 }
 /////////////////////////////////////////////////////////////////// VARIANT-----/
@@ -75,6 +74,23 @@ export default {
     h2 {
         @include title-medium;
         color: $color-white;
+    }
+}
+/////////////////////////////////////////////////////////////////// VARIANT-----/
+
+/////////////////////////////////////////////////////////////////// VARIANT-4
+.variant-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h4 {
+        display: none;
+    }
+
+    h2 {
+        @include title-medium;
     }
 }
 /////////////////////////////////////////////////////////////////// VARIANT-----/
