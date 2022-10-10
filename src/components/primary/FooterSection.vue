@@ -11,15 +11,18 @@
             </div>
 
             <div class="block">
-                <list-block />
+                <list-block :title="avadaResources.title" :links="avadaResources.links" />
             </div>
 
             <div class="block">
-                <list-block />
+                <list-block :title="recentPosts.title" :links="recentPosts.posts" />
             </div>
         </div>
 
-        <social-block :classVariant="2" />
+        <social-block
+            :classVariant="2"
+            description="This is a clone of Avada Theme by ThemeFusion | For educational purposes | developed by hugo with ❤️"
+        />
     </div>
 </template>
 
@@ -29,6 +32,18 @@ import SocialBlock from "../secondary/SocialBlock.vue";
 export default {
     components: { ListBlock, SocialBlock },
     name: "FooterSection",
+    data() {
+        return {
+            avadaResources: {
+                title: "avada movers",
+                links: ["Home", "Rates", "Testimonials", "Blog", "Free Quote"],
+            },
+            recentPosts: {
+                title: "recent posts",
+                posts: ["Heading Out To College?", "Moving Your Business?", "Outstanding Quality", "Cost of Moving", "Best Moving Tips"],
+            },
+        };
+    },
 };
 </script>
 
@@ -44,19 +59,19 @@ export default {
 
         h3 {
             @include title-list;
-            margin-bottom: 1rem;
+            margin-bottom: 2.2rem;
         }
 
         .block {
             width: calc(100% / 3);
-            padding: 1.5rem 2rem 1.5rem 0rem;
+            padding: 1.7rem 3rem 1.7rem 0rem;
 
             @media screen and (max-width: 640px) {
                 width: 100%;
             }
 
             img {
-                margin: 2rem 0rem;
+                margin-top: 2rem;
             }
         }
     }
