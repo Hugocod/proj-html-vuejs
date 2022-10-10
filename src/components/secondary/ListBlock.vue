@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <h3>title</h3>
+        <h3>{{ title }}</h3>
         <ul>
-            <li v-for="n in 5" :key="n">
-                <a><font-awesome-icon icon="fa-solid fa-chevron-right" /> link{{ n }}</a>
+            <li v-for="(link, index) in links" :key="index + link">
+                <a><font-awesome-icon icon="fa-solid fa-chevron-right" /> {{ link }}</a>
             </li>
         </ul>
     </div>
@@ -12,6 +12,7 @@
 <script>
 export default {
     name: "ListBlock",
+    props: ["links", "title"],
 };
 </script>
 
@@ -21,11 +22,16 @@ export default {
 .container {
     h3 {
         @include title-list;
-        margin-bottom: 1rem;
+        margin-bottom: 2.2rem;
     }
 
     li {
-        margin-bottom: 1rem;
+        margin-bottom: 1.8rem;
+        font-weight: 400;
+        cursor: pointer;
+        & :hover {
+            color: $color-green-vivid;
+        }
     }
 }
 </style>
