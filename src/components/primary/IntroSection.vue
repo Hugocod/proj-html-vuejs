@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <social-block classVariant="1" description="Call us for a Free Quote: 1.800.555.6789" />
         <header>
             <div class="wrapper">
@@ -87,6 +87,7 @@ header {
                 font-weight: 900;
                 text-transform: none;
                 padding: 0 1.3rem;
+                cursor: pointer;
 
                 & :hover {
                     color: $color-green-vivid;

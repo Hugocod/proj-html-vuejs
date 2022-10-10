@@ -1,12 +1,12 @@
 <template>
     <div>
-        <intro-section />
-        <info-section-award />
-        <service-section />
-        <info-section-moving />
-        <testimonials-section />
-        <cta-section />
-        <footer-section />
+        <intro-section data-aos="fade-up" data-aos-duration="700" />
+        <info-section-award data-aos="fade-up" data-aos-duration="700" />
+        <service-section data-aos="fade-up" data-aos-duration="700" />
+        <info-section-moving data-aos="fade-up" data-aos-duration="700" />
+        <testimonials-section data-aos="fade-up" data-aos-duration="700" />
+        <cta-section data-aos="fade-up" data-aos-duration="700" />
+        <footer-section data-aos="fade-up" data-aos-duration="700" />
     </div>
 </template>
 
@@ -34,13 +34,19 @@ export default {
     padding: 0;
     box-sizing: border-box;
     color: #2c3e50;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*  pointer-events: none; */
 }
 
 p {

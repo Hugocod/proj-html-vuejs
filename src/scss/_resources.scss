@@ -69,6 +69,8 @@ $color-white: white;
     font-weight: 900;
     white-space: nowrap;
 
+    transition: all 0.4s ease-in-out;
+
     &:hover {
         background-color: $color-blue-light;
         cursor: pointer;

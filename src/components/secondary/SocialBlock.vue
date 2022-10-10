@@ -55,6 +55,7 @@ export default {
             .fa-youtube {
                 margin: 0 0.5rem;
                 font-size: 1.2rem;
+                cursor: pointer;
             }
         }
 
@@ -89,6 +90,7 @@ export default {
             .fa-youtube {
                 margin: 0 0.5rem;
                 font-size: 1.4rem;
+                cursor: pointer;
             }
         }
 
