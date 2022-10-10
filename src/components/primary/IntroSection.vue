@@ -15,6 +15,8 @@
                     </nav>
                     <btn-mono buttonText="Free Quote" />
                 </div>
+
+                <font-awesome-icon icon="fa-solid fa-bars" />
             </div>
         </header>
 
@@ -69,6 +71,10 @@ header {
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: 1124px) {
+            display: none;
+        }
+
         ul {
             display: flex;
 
@@ -79,11 +85,19 @@ header {
             }
         }
     }
+
+    .fa-bars {
+        @media screen and (min-width: 1124px) {
+            display: none;
+        }
+        font-size: 1.5rem;
+    }
 }
 
 .text-block {
     p {
         @include title-small;
+        text-align: center;
     }
 
     padding: 6rem 0rem 11rem 0rem;
@@ -96,6 +110,7 @@ header {
     font-size: 1.3rem;
     background-color: $color-blue;
     color: $color-white;
+    text-align: center;
 
     &:hover {
         background-color: $color-blue-light;
