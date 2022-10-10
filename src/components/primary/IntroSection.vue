@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <social-block classVariant="1" />
+        <social-block classVariant="1" description="Call us for a Free Quote: 1.800.555.6789" />
         <header>
             <div class="wrapper">
                 <img src="../../../public/images/avada-movers-retinalogo.png" alt="logo" />
