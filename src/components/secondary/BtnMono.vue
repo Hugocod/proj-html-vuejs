@@ -13,5 +13,6 @@ export default {
 @import "../../scss/_resources.scss";
 button {
     @include btn-primary;
+    text-align: center;
 }
 </style>

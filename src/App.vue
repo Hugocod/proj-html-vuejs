@@ -40,5 +40,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*  pointer-events: none; */
+}
+
+p {
+    line-height: 2rem !important;
 }
 </style>

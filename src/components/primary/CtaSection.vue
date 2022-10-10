@@ -26,13 +26,15 @@ export default {
 .container {
     background-image: url("../../../public/images/avada-movers-request-quote-background.jpg");
     border-bottom: 15px solid $color-green-vivid;
+    background-size: cover;
+    text-align: center;
     .wrapper {
         @include wrapper-size;
         padding: 6rem 0rem;
-        width: 60%;
+        width: 80%;
 
         p {
-            padding: 2rem;
+            padding: 2rem 0;
         }
     }
 }

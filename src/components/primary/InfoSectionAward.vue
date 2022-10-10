@@ -1,7 +1,8 @@
 <template>
     <div class="container">
         <div class="wrapper">
-            <text-block :classVariant="1" subtitle="HEADACHE FREE" title="Award Winning Moving Company" />
+            <text-block :classVariant="1" subtitle="HEADACHE FREE" title="Award Winning" />
+            <text-block :classVariant="4" title="Moving Company" />
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac augue. Orci varius natoque penatibus et magnis dis parturient
                 montes, ridiculus mus. Aliquam enim leo, condimentum facilisis nulla sed, cursus arcu. Aliquam enim leo.
@@ -24,11 +25,12 @@ export default {
 @import "../../scss/_resources.scss";
 
 .container {
+    text-align: center;
     background-color: $color-gray-light;
     .wrapper {
         @include wrapper-size;
         padding: 6rem 0rem;
-        width: 60%;
+        width: 80%;
 
         p {
             padding: 2rem;

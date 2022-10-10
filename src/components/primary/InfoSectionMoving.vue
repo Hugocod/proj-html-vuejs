@@ -31,6 +31,7 @@ export default {
     background-image: url("https://avada.theme-fusion.com/movers/wp-content/uploads/sites/108/2018/06/avada-movers-movewithease-background-new.jpg");
     background-size: cover;
     padding: 7rem 0;
+    text-align: center;
 
     .wrapper {
         @include wrapper-size;
