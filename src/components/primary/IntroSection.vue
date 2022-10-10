@@ -8,8 +8,8 @@
                 <div class="nav-container">
                     <nav>
                         <ul>
-                            <li v-for="n in 6" :key="n">
-                                <a>link{{ n }}</a>
+                            <li v-for="(link, index) in navLinks" :key="index">
+                                <a>{{ link }}</a>
                             </li>
                         </ul>
                     </nav>
@@ -39,6 +39,11 @@ import TextBlock from "../secondary/TextBlock.vue";
 export default {
     components: { BtnMono, TextBlock, SocialBlock },
     name: "IntroSection",
+    data() {
+        return {
+            navLinks: ["Home", "Rates", "Testimonials", "FAQ", "Blog", "Contact"],
+        };
+    },
 };
 </script>
 
@@ -71,7 +76,7 @@ header {
         justify-content: center;
         align-items: center;
 
-        @media screen and (max-width: 1124px) {
+        @media screen and (max-width: 1024px) {
             display: none;
         }
 
@@ -79,15 +84,19 @@ header {
             display: flex;
 
             li {
-                @include title-list;
+                font-weight: 900;
                 text-transform: none;
-                padding: 0 2rem;
+                padding: 0 1.3rem;
+
+                & :hover {
+                    color: $color-green-vivid;
+                }
             }
         }
     }
 
     .fa-bars {
-        @media screen and (min-width: 1124px) {
+        @media screen and (min-width: 1024px) {
             display: none;
         }
         font-size: 1.5rem;
