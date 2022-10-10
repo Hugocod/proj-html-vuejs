@@ -26,12 +26,14 @@ $color-white: white;
     color: $color-black;
     text-transform: uppercase;
     font-weight: 900;
+    text-align: center;
 }
 
 @mixin title-medium {
     font-size: 2.7rem;
     font-weight: 900;
     color: $color-green-vivid;
+    text-align: center;
     text-align: center;
 }
 
@@ -48,6 +50,7 @@ $color-white: white;
     text-transform: uppercase;
     font-weight: 900;
     padding: 1rem 0;
+    text-align: center;
 }
 
 @mixin title-list {
@@ -64,6 +67,7 @@ $color-white: white;
     border-radius: 3rem;
     text-transform: uppercase;
     font-weight: 900;
+    white-space: nowrap;
 
     &:hover {
         background-color: $color-blue-light;
