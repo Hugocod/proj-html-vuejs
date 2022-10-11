@@ -13,7 +13,4 @@ import App from "./App.vue";
 
 library.add(fas, fab, far);
 
-/* 
-createApp(App).component("FontAwesomeIcon", FontAwesomeIcon).mount("#app"); */
-
 createApp(App).use(AOS.init()).component("FontAwesomeIcon", FontAwesomeIcon).mount("#app");

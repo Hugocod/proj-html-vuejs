@@ -17,8 +17,11 @@ $color-white: white;
 /////////////////////////////////////////////////////////////////// MIXINS
 
 @mixin wrapper-size {
-    width: 90%;
+    max-width: 1350px;
     margin: 0 auto;
+    @media screen and (max-width: 1350px) {
+        width: 90%;
+    }
 }
 
 @mixin title-big {
