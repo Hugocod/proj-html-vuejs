@@ -21,7 +21,6 @@ export default {
 <style scoped lang="scss">
 @import "../../scss/_resources.scss";
 
-/////////////////////////////////////////////////////////////////// MIXINS
 .container {
     padding: 1.5rem;
     h2 {
@@ -47,5 +46,4 @@ export default {
         padding: 1.5rem;
     }
 }
-/////////////////////////////////////////////////////////////////// MIXINS
 </style>

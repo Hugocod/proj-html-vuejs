@@ -32,7 +32,6 @@ export default {
 <style scoped lang="scss">
 @import "../../scss/_resources.scss";
 
-/////////////////////////////////////////////////////////////////// MIXINS
 .container {
     background-color: $color-gray-light;
 
@@ -55,5 +54,4 @@ export default {
         padding: 1.5rem;
     }
 }
-/////////////////////////////////////////////////////////////////// MIXINS
 </style>
