@@ -30,7 +30,7 @@ export default {
     .wrapper {
         @include wrapper-size;
         padding: 6rem 0rem;
-        width: 60%;
+        width: 50%;
 
         @media screen and (max-width: 1024px) {
             width: 90%;
@@ -38,6 +38,7 @@ export default {
 
         p {
             padding: 2rem;
+            width: 100%;
         }
     }
 }
